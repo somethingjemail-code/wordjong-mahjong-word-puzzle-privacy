@@ -15,18 +15,19 @@
     margin: 0; background: var(--bg); color: var(--text);
     font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   }
-  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  main { max-width: 780px; margin: 0 auto; padding: 40px 16px 64px; }
   h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; }
-  h2 { font-size: 1.2rem; margin: 36px 0 8px; color: var(--accent); }
-  .meta { color: var(--muted); margin: 0 0 28px; }
-  a { color: var(--accent); }
+  h2 { font-size: 1.2rem; margin: 38px 0 8px; color: var(--accent); }
+  h3 { font-size: 1.02rem; margin: 22px 0 6px; }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
   ul { padding-left: 1.3em; }
   li { margin: 4px 0; }
-  .note {
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: 10px; padding: 14px 16px; margin: 20px 0;
-  }
-  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .95rem; }
+  nav { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; }
+  nav ol { margin: 0; padding-left: 1.4em; columns: 2; column-gap: 24px; }
+  @media (max-width: 560px) { nav ol { columns: 1; } }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .94rem; }
   th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
   th { color: var(--muted); font-weight: 600; }
   footer { margin-top: 48px; color: var(--muted); font-size: .9rem; }
@@ -35,84 +36,179 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">WordJong - Mahjong Word Puzzle &middot; ElmanetoProductions &middot; Effective date: October 8, 2026</p>
+<p class="meta">WordJong - Mahjong Word Puzzle &middot; ElmanetoProductions &middot; Effective date: October 8, 2026 &middot; Last updated: October 8, 2026</p>
 
-<p>This privacy policy explains how ElmanetoProductions ("we", "us") handles information when you play
-<strong>WordJong - Mahjong Word Puzzle</strong> (the "App") on Android. By using the App, you agree to this policy.</p>
+<p>This privacy policy explains what information is collected when you use <strong>WordJong - Mahjong Word Puzzle</strong> (the "App"), how it is used and shared, and the choices and rights you have. The App is developed by ElmanetoProductions ("we", "us", "our"). This policy covers every version of the App and every platform it is offered on, including versions that contain advertising, analytics and in-app purchases. By installing or using the App, you acknowledge this policy. If you do not agree with it, please do not use the App.</p>
 
-<h2>1. Summary</h2>
+<nav aria-label="Contents">
+<ol>
+  <li><a href="#summary">Summary</a></li>
+  <li><a href="#provide">Information you provide</a></li>
+  <li><a href="#device">Information stored on your device</a></li>
+  <li><a href="#auto">Information collected automatically</a></li>
+  <li><a href="#use">How we use information</a></li>
+  <li><a href="#legal">Legal bases (EEA/UK)</a></li>
+  <li><a href="#partners">Third-party partners</a></li>
+  <li><a href="#ads">Advertising</a></li>
+  <li><a href="#choices">Your choices and consent</a></li>
+  <li><a href="#rights">Your privacy rights</a></li>
+  <li><a href="#us">US state privacy rights</a></li>
+  <li><a href="#retention">Data retention and deletion</a></li>
+  <li><a href="#age">Age requirements</a></li>
+  <li><a href="#security">Security</a></li>
+  <li><a href="#transfers">International transfers</a></li>
+  <li><a href="#permissions">Device permissions</a></li>
+  <li><a href="#changes">Changes to this policy</a></li>
+  <li><a href="#contact">Contact us</a></li>
+</ol>
+</nav>
+
+<h2 id="summary">1. Summary</h2>
 <ul>
-  <li>The App does not require an account. We do not ask for your name, email, phone number, contacts, photos or precise location.</li>
-  <li>Your game progress and settings are stored locally on your device.</li>
-  <li>The App uses third-party software development kits (SDKs) for advertising and analytics. These SDKs may automatically collect device identifiers and usage data, as described below.</li>
-  <li>We do not sell your personal information.</li>
+  <li>The App does not require an account. We do not ask for your name, email address, phone number, contacts, photos, files, microphone, camera or precise (GPS) location.</li>
+  <li>Your game progress and settings are stored on your device.</li>
+  <li>The App uses third-party software development kits (SDKs) for advertising, analytics, attribution, crash reporting and, if offered, in-app purchases. These SDKs automatically collect device identifiers, approximate location derived from your IP address, device information, and data about how you use the App and interact with ads.</li>
+  <li>This data is used to show ads (which may be personalized where you allow it), measure and improve the App, and prevent fraud.</li>
+  <li>We do not sell your personal information for money. However, sharing data with advertising partners for targeted advertising may be treated as a "sale" or "sharing" under some laws. You can opt out (see sections 9 and 11).</li>
+  <li>The App is intended for adults aged 18 and over and is not directed at children.</li>
 </ul>
 
-<h2>2. Information stored on your device</h2>
-<p>The App saves your level progress, power-up inventory and settings (such as sound and music volume) on your device so you can continue where you left off. This data stays on your device. It is not sent to us, and it is deleted when you uninstall the App or clear its data.</p>
+<h2 id="provide">2. Information you provide</h2>
+<p>The App has no accounts, sign-in or chat. We only receive information from you if you choose to contact us, for example by email. In that case we receive your email address, the content of your message and anything you choose to include (such as your device's Advertising ID). We use it only to answer you and to handle your request.</p>
 
-<h2>3. Information collected automatically by third-party SDKs</h2>
-<p>To show ads (including optional rewarded ads that give you in-game rewards) and to understand how the game is played so we can improve it, the App includes SDKs provided by our publishing partner <strong>Voodoo SAS</strong> (the TinySauce SDK and/or the VoodooSauce SDK). These SDKs, and the partner SDKs they include, may automatically collect:</p>
+<h2 id="device">3. Information stored on your device</h2>
+<p>The App saves your level progress, power-up inventory, rewards and settings (such as sound and music volume) on your device so you can continue where you left off. This data stays on your device and is deleted when you uninstall the App or clear its data. Some SDKs also store identifiers and settings on your device, including your consent choices.</p>
+
+<h2 id="auto">4. Information collected automatically</h2>
+<p>When you use the App, we and our partners' SDKs may automatically collect the following information:</p>
 <ul>
-  <li><strong>Device identifiers:</strong> the Android Advertising ID, the App Set ID, and similar identifiers;</li>
-  <li><strong>Device and network information:</strong> device model, operating system version, language, country/region, screen size, IP address (which may be used to estimate an approximate location) and connection type;</li>
-  <li><strong>App usage and gameplay data:</strong> sessions, levels started and completed, time played, in-game events and interactions with ads;</li>
-  <li><strong>Diagnostics:</strong> crash logs and performance data.</li>
+  <li><strong>Device identifiers:</strong> the Android Advertising ID (AAID), the App Set ID, the Firebase/installation ID and similar identifiers. On iOS, if offered, the IDFA (only with your permission) and the IDFV. Also identifiers that SDKs generate themselves.</li>
+  <li><strong>Device and network information:</strong> device make and model, operating system and version, language, time zone, screen size and resolution, battery level, memory and storage status, mobile carrier, connection type (Wi-Fi or mobile), user-agent and IP address.</li>
+  <li><strong>Approximate location:</strong> country, region or city inferred from your IP address. The App does not request or collect precise GPS location.</li>
+  <li><strong>App usage and gameplay data:</strong> install date and source, App version, session starts, length and frequency, levels started, completed and failed, scores, time spent, power-ups and rewards used, settings and other in-game events.</li>
+  <li><strong>Advertising data:</strong> which ads were requested, shown, clicked, watched or skipped, the rewards earned from rewarded ads, the ad campaign that led you to install the App, and ad revenue data.</li>
+  <li><strong>Purchase data (if in-app purchases are offered):</strong> the item purchased, price, currency, time and transaction ID. Payments are processed by Google Play (or the relevant app store). We never receive or store your card or other payment details.</li>
+  <li><strong>Diagnostics:</strong> crash logs, error reports, performance data (such as load times and frame rate) and technical logs.</li>
+  <li><strong>Consent data:</strong> your privacy and consent choices, and when you made them.</li>
 </ul>
-<p>This information is used to:</p>
+<p>Some of this information may be combined, and some is considered personal data under certain laws (for example, advertising IDs and IP addresses under the GDPR).</p>
+
+<h2 id="use">5. How we use information</h2>
 <ul>
-  <li>show ads, including personalized ads where you have allowed them, and limit how often you see the same ad;</li>
-  <li>measure ad performance and attribute app installs to ad campaigns;</li>
-  <li>run analytics that help us balance difficulty and improve the game;</li>
-  <li>detect fraud, and keep the App stable and secure.</li>
+  <li>To run the App and deliver its features, including saving progress and giving rewards for watching rewarded ads.</li>
+  <li>To show ads, including personalized (interest-based) ads where you allow it, and contextual or non-personalized ads otherwise. Also to limit how often you see the same ad.</li>
+  <li>To measure ad performance and attribute installs to ad campaigns.</li>
+  <li>For analytics: understanding how the App is played so we can balance difficulty, fix problems and improve the game.</li>
+  <li>To detect, prevent and investigate fraud (including ad fraud), abuse and security issues.</li>
+  <li>To process and verify in-app purchases, if offered.</li>
+  <li>To respond to your messages and privacy requests.</li>
+  <li>To comply with legal obligations and enforce our terms.</li>
 </ul>
 
-<div class="note">Versions of the App released before ads and analytics are added may not include these SDKs. This policy describes the App as it is, or will be, distributed with them.</div>
+<h2 id="legal">6. Legal bases for processing (EEA, UK and Switzerland)</h2>
+<ul>
+  <li><strong>Consent:</strong> for personalized advertising, and for storing or accessing information on your device where consent is required by law. You can withdraw your consent at any time.</li>
+  <li><strong>Performance of a contract:</strong> to provide the App and its features to you.</li>
+  <li><strong>Legitimate interests:</strong> for analytics, contextual (non-personalized) advertising, crash reporting, security and fraud prevention, where these interests are not overridden by your rights.</li>
+  <li><strong>Legal obligation:</strong> where we must process data to comply with the law.</li>
+</ul>
 
-<h2>4. Third parties we share data with</h2>
-<p>Data collected by these SDKs is processed by the following companies, or categories of companies, under their own privacy policies:</p>
+<h2 id="partners">7. Third-party partners we share data with</h2>
+<p>The App includes SDKs from our publishing partner <strong>Voodoo SAS</strong> (such as the TinySauce SDK and/or the VoodooSauce SDK) and from the partners those SDKs integrate. These partners receive and process the information described above. Each partner uses the data under its own privacy policy, and some act as independent controllers. Depending on the version of the App, partners may include:</p>
+<div class="table-wrap">
 <table>
   <tr><th>Partner</th><th>Purpose</th><th>Privacy policy</th></tr>
-  <tr><td>Voodoo SAS</td><td>Publishing partner: SDK provider, analytics and ad monetization</td><td><a href="https://www.voodoo.io/privacy/">voodoo.io/privacy</a></td></tr>
-  <tr><td>Google (Google Play Services, AdMob, Firebase)</td><td>Advertising, analytics, Play services</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+  <tr><td>Voodoo SAS</td><td>Publishing partner: SDK provider, analytics, advertising and monetization</td><td><a href="https://www.voodoo.io/privacy/">voodoo.io/privacy</a></td></tr>
+  <tr><td>Google (AdMob, Google Play Services, Firebase, Crashlytics)</td><td>Advertising, analytics, crash reporting, app store services</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
   <tr><td>GameAnalytics</td><td>Gameplay analytics</td><td><a href="https://gameanalytics.com/privacy">gameanalytics.com/privacy</a></td></tr>
-  <tr><td>Meta Platforms (Facebook SDK)</td><td>Analytics and ad measurement</td><td><a href="https://www.facebook.com/privacy/policy/">facebook.com/privacy/policy</a></td></tr>
-  <tr><td>Adjust</td><td>Install attribution and ad measurement</td><td><a href="https://www.adjust.com/terms/privacy-policy/">adjust.com/terms/privacy-policy</a></td></tr>
-  <tr><td>AppLovin (MAX)</td><td>Ad mediation</td><td><a href="https://www.applovin.com/privacy/">applovin.com/privacy</a></td></tr>
-  <tr><td>Advertising networks working through ad mediation</td><td>Serving and measuring ads</td><td>Each network's own policy</td></tr>
+  <tr><td>Meta Platforms (Facebook SDK, Audience Network)</td><td>Analytics, ad measurement and advertising</td><td><a href="https://www.facebook.com/privacy/policy/">facebook.com/privacy/policy</a></td></tr>
+  <tr><td>Adjust</td><td>Install attribution, ad measurement, fraud prevention</td><td><a href="https://www.adjust.com/terms/privacy-policy/">adjust.com/terms/privacy-policy</a></td></tr>
+  <tr><td>AppsFlyer</td><td>Install attribution and ad measurement</td><td><a href="https://www.appsflyer.com/legal/privacy-policy/">appsflyer.com/legal/privacy-policy</a></td></tr>
+  <tr><td>AppLovin (MAX)</td><td>Ad mediation and advertising</td><td><a href="https://www.applovin.com/privacy/">applovin.com/privacy</a></td></tr>
+  <tr><td>Unity Technologies (Unity Ads, LevelPlay/ironSource, Unity engine services)</td><td>Advertising, ad mediation, engine diagnostics</td><td><a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a></td></tr>
+  <tr><td>Other ad networks reached through mediation, such as Liftoff/Vungle, Mintegral, Pangle, InMobi, Moloco, Chartboost, Digital Turbine (DT Exchange), Amazon Publisher Services and BidMachine</td><td>Serving and measuring ads</td><td>Each network's own privacy policy</td></tr>
 </table>
-<p>Not every partner is present in every version of the App. We may also disclose information if required by law, or to protect our rights or the safety of users.</p>
-
-<h2>5. Your choices and consent</h2>
+</div>
+<p>Not every partner is present in every version or region of the App, and partners may change over time. We may also share information:</p>
 <ul>
-  <li><strong>Consent:</strong> where required by law (for example, in the EEA, the UK and Switzerland), the App asks for your consent before personal data is used for personalized advertising. You can change your choice later in the App's settings, where available.</li>
-  <li><strong>Advertising ID:</strong> you can reset or delete your Advertising ID, or opt out of ads personalization, in your Android settings (Settings &rarr; Privacy &rarr; Ads, or Google &rarr; Ads).</li>
-  <li><strong>Stop all collection:</strong> uninstalling the App stops all data collection by the App.</li>
+  <li>with service providers that process data on our behalf, such as hosting and email;</li>
+  <li>if required by law, court order or government request;</li>
+  <li>to protect our rights, users, or the safety of others, or to investigate fraud;</li>
+  <li>as part of a merger, acquisition, publishing agreement or sale of assets involving the App;</li>
+  <li>in aggregated or de-identified form that does not identify you.</li>
 </ul>
 
-<h2>6. Your rights</h2>
-<p>Depending on where you live (for example, under the GDPR in the EU/UK or the CCPA/CPRA in California), you may have the right to access, correct, delete or port your personal data, to object to or restrict its processing, and to withdraw your consent at any time. Because we do not run accounts, partner SDKs identify you only by device identifiers. To make a request, contact us at the email below and include your Advertising ID if you can, or contact the relevant partner directly using the links above. You may also complain to your local data protection authority.</p>
+<h2 id="ads">8. Advertising</h2>
+<p>The App may show rewarded video ads (which you choose to watch for an in-game reward), interstitial ads and banner ads. Ads are provided by the partners listed above. Ad partners may use cookies, device identifiers and similar technologies to show ads based on your interests, which may include information collected across other apps and websites, to measure ad performance and to limit repetition. Where personalized advertising requires your consent, it is shown only if you have given consent. Otherwise you may see non-personalized or contextual ads. Ads are designed to be appropriate for a general audience.</p>
 
-<h2>7. Data retention</h2>
-<p>Local game data stays on your device until you uninstall the App or clear its data. Data held by partners is kept according to their own retention policies. For example, Voodoo states that it deletes user-level data when a deletion request is received, or after 25 months without activity.</p>
+<h2 id="choices">9. Your choices and consent</h2>
+<ul>
+  <li><strong>Consent prompt:</strong> where required by law (for example, in the EEA, UK and Switzerland, and certain US states), the App asks for your consent or gives you the option to opt out before personal data is used for personalized advertising. You can review or change your choice at any time through the privacy option in the App's settings, where available, or by contacting us.</li>
+  <li><strong>Advertising ID:</strong> on Android, you can reset or delete your Advertising ID, or opt out of ads personalization, in your device settings (Settings &rarr; Privacy &rarr; Ads, or Settings &rarr; Google &rarr; Ads). On iOS, you can control app tracking in Settings &rarr; Privacy &amp; Security &rarr; Tracking.</li>
+  <li><strong>Industry opt-outs:</strong> you can use tools such as <a href="https://youradchoices.com/appchoices">AppChoices</a> (DAA) and <a href="https://www.youronlinechoices.eu/">Your Online Choices</a> (EDAA).</li>
+  <li><strong>Stop all collection:</strong> uninstall the App. This stops all further collection by the App.</li>
+</ul>
 
-<h2>8. Children</h2>
-<p>The App is a general-audience word puzzle game and is not directed at children under 13 (or the minimum age in your country). We do not knowingly collect personal information from children. If you believe a child has provided personal information through the App, contact us and we will help get it deleted.</p>
+<h2 id="rights">10. Your privacy rights</h2>
+<p>Depending on where you live, including under the EU/UK GDPR, Brazil's LGPD, Canada's PIPEDA and similar laws, you may have the right to:</p>
+<ul>
+  <li>access the personal data held about you, and receive a copy of it (portability);</li>
+  <li>correct inaccurate data;</li>
+  <li>have your data deleted;</li>
+  <li>restrict or object to processing, including processing based on legitimate interests and for direct marketing;</li>
+  <li>withdraw consent at any time, without affecting processing that happened before;</li>
+  <li>complain to your local data protection authority.</li>
+</ul>
+<p><strong>How to make a request:</strong> email us at the address in section 18 with the subject "Privacy request". Include your device's Advertising ID if you can (found in your device's ad settings), because the App has no accounts and partners identify devices only by such identifiers. We will respond within the time required by law (usually 30 days) and forward deletion requests to the relevant partners where applicable. You can also contact any partner listed in section 7 directly. We do not discriminate against you for exercising your rights.</p>
 
-<h2>9. Security</h2>
-<p>We rely on reputable partners that use industry-standard safeguards, such as encrypted connections, to protect data in transit. No method of transmission or storage is completely secure, however.</p>
+<h2 id="us">11. US state privacy rights (including California)</h2>
+<p>If you live in California, Colorado, Connecticut, Virginia, Utah, Texas, Oregon or another US state with a consumer privacy law, you have the right to:</p>
+<ul>
+  <li>know what personal information is collected, used and disclosed;</li>
+  <li>access, correct and delete it;</li>
+  <li>opt out of the "sale" or "sharing" of personal information and of targeted advertising.</li>
+</ul>
+<p><strong>Categories collected</strong> in the past 12 months, as described in section 4:</p>
+<ul>
+  <li>identifiers (device and advertising IDs, IP address);</li>
+  <li>internet or other electronic network activity (App usage and ad interactions);</li>
+  <li>geolocation (approximate, derived from IP only);</li>
+  <li>commercial information (in-app purchases, if offered);</li>
+  <li>inferences used for advertising.</li>
+</ul>
+<p>We do not collect sensitive personal information as defined by these laws. Disclosing identifiers and usage data to advertising partners for targeted advertising may be a "sale" or "sharing" under these laws. To opt out, reset or delete your Advertising ID or turn off ads personalization in your device settings, use the in-app privacy option where available, or email us. Where the law requires, we honor Global Privacy Control signals. You may use an authorized agent to submit a request. We may need to verify a request before acting on it.</p>
 
-<h2>10. International transfers</h2>
-<p>Our partners may process data in countries other than yours, including the United States and countries in the European Union, with appropriate safeguards where the law requires them.</p>
+<h2 id="retention">12. Data retention and deletion</h2>
+<p>Game data on your device remains until you uninstall the App or clear its data. Emails you send us are kept for as long as needed to handle your request and then deleted. Partners keep data according to their own retention policies. For example, Voodoo states that it deletes user-level data when a deletion request is received, or after 25 months without activity. To request deletion of data held by us or our partners, follow the steps in section 10.</p>
 
-<h2>11. Changes to this policy</h2>
-<p>We may update this policy, for example when new features or partners are added. The updated version will be posted on this page with a new effective date.</p>
+<h2 id="age">13. Age requirements</h2>
+<p>The App is intended for adults aged <strong>18 and over</strong>. It is not designed for or directed at children, and we do not knowingly collect personal information from anyone under 18, and in particular from children under 13 (or under 16 in the EEA and UK). If we learn that personal information of a child has been collected, we will delete it and take steps to have our partners delete it. If you believe a child has used the App and provided information, please contact us at the email in section 18.</p>
 
-<h2>12. Contact</h2>
+<h2 id="security">14. Security</h2>
+<p>We and our partners use reasonable administrative, technical and organizational measures, such as encrypted (HTTPS/TLS) connections, to protect information. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+
+<h2 id="transfers">15. International data transfers</h2>
+<p>Our partners may process and store information in countries other than your own, including the United States and countries in the European Union, whose data protection laws may differ from yours. Where required, transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses or an adequacy decision.</p>
+
+<h2 id="permissions">16. Device permissions</h2>
+<p>The App may request or use the following permissions:</p>
+<ul>
+  <li><strong>Internet and network state:</strong> to load ads, send analytics and verify purchases;</li>
+  <li><strong>Advertising ID</strong> (<code>com.google.android.gms.permission.AD_ID</code>): for advertising and measurement;</li>
+  <li><strong>Vibration:</strong> for haptic feedback, if offered;</li>
+  <li><strong>Notifications:</strong> only if you allow them.</li>
+</ul>
+<p>The App does not access your contacts, camera, microphone, photos, files or precise location.</p>
+
+<h2 id="changes">17. Changes to this policy</h2>
+<p>We may update this policy from time to time, for example when we add features, partners or ad formats. The updated version will be posted on this page with a new "Last updated" date. Where the law requires, we will notify you or ask for your consent again. Continuing to use the App after an update means you acknowledge the updated policy.</p>
+
+<h2 id="contact">18. Contact us</h2>
+<p>For questions or requests about this policy or your data:</p>
 <p>ElmanetoProductions<br>
-Email: <a href="mailto:somethingjemail@gmail.com">somethingjemail@gmail.com</a></p>
+Email: <a href="mailto:somethingjemail@gmail.com?subject=Privacy%20request%20-%20WordJong">somethingjemail@gmail.com</a></p>
 
-<footer>&copy; 2026 ElmanetoProductions</footer>
+<footer>&copy; 2026 ElmanetoProductions. This policy applies to WordJong - Mahjong Word Puzzle.</footer>
 </main>
 </body>
 </html>
